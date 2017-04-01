@@ -1,51 +1,54 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Wypasione liczydło</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Exo+2:400,500,600,700,800,900" rel="stylesheet">
     <script src="script.js"></script>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="calculator">
-      <div class="logo">CASIO</div>
-      <div class="display">6666666</div>
-      <div class="buttons">
-      <div class="button spacial_button">AC</div>
-      <div class="button functional_button">C</div>
-      <div class="button functional_button">√</div>
-      <div class="button functional_button">%</div>
-      </div>
-      <div class="buttons">
-      <div class="button">7</div>
-      <div class="button">8</div>
-      <div class="button">9</div>
-      <div class="button functional_button">+</div>
-      </div>
-      <div class="buttons">
-      <div class="button">4</div>
-      <div class="button">5</div>
-      <div class="button">6</div>
-      <div class="button functional_button">X</div>
-      </div>
-      <div class="buttons">
-      <div class="button">1</div>
-      <div class="button">2</div>
-      <div class="button">3</div>
-      <div class="button functional_button">-</div>
-      </div>
-      <div class="buttons">
-      <div class="button">0</div>
-      <div class="button functional_button">.</div>
-      <div class="button functional_button">=</div>
-      <div class="button functional_button">+</div>
-      </div>
+        <div class="logo">CASIO</div>
+        <div  class="display" id="display"></div>
+        <div class="buttons">
+            <button class="button special_button" value="AC">AC</button>
+            <button class="button functional_button" id="clear" value="C">C</button>
+            <button class="button functional_button" value="√">√</button>
+            <button class="button functional_button" value="%">%</button>
+        </div>
+        <div class="buttons">
+            <button class="button numbers operator" value="7">7</button>
+            <button class="button numbers operator" value="8">8</button>
+            <button class="button numbers operator" value="9">9</button>
+            <button class="button numbers" value="/">/</button>
+        </div>
+        <div class="buttons">
+            <button class="button numbers operator" value="4">4</button>
+            <button class="button numbers operator" value="5">5</button>
+            <button class="button numbers operator" value="6">6</button>
+            <button class="button functional_button" value="X">X</button>
+        </div>
+        <div class="buttons">
+            <button class="button numbers operator" value="1">1</button>
+            <button class="button numbers operator" value="2">2</button>
+            <button class="button numbers operator" value="3">3</button>
+            <button class="button functional_button" value="-">-</button>
+        </div>
+        <div class="buttons">
+            <button class="button numbers operator" value="0">0</button>
+            <button class="button functional_button" value=".">.</button>
+            <button class="button functional_button" id="result" value="=">=</button>
+            <button class="button numbers" value="+">+</button>
+        </div>
 
 
 
     </div>
 
 
-  </body>
+</body>
+
 </html>
