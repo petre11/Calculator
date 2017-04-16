@@ -1,45 +1,45 @@
-// var array = [1,2,3];
-// console.log(Number(array[1]));
-
 console.log("hello liczydło");
 document.addEventListener("DOMContentLoaded", function(event) {
 
-    var numbers = document.querySelectorAll('.numbers');
+    var operators = document.querySelectorAll('.operators');
     var display = document.querySelector('#display');
     var clear = document.querySelector('#clear');
-    var wynik =document.querySelector('#result');
-    var memory = [];
-    var suma = 0;
-    var operator;
+    var equalTo = document.querySelector('#result');
+    var ac = document.querySelector('#onOf');
+    var memory = "";
+    var result ="";
 
-
-    for (var i = 0; i < numbers.length; i++) {
-        numbers   [i].addEventListener('click', function() {
-              memory.push(this.getAttribute('value'));
-                display.innerHTML = memory.join("");
-                console.log(memory);
+    for (var i = 0; i < operators.length; i++) {
+        operators[i].addEventListener('click', function() {
+           memory += this.value;
+            display.value = memory;
         });
+}
+        equalTo.addEventListener('click', function() {
+            display.value = memory;
+            result = eval(memory);
+            display.value = result;
+            memory = result;
 
-    }
+            if(display.value ==Infinity){
+              display.value = "Error!";
+              memory ="";
+            }//divided by 0
+        });//display result
 
-    wynik.addEventListener('click', function() {
-      for (var j = 0; j < memory.length; j++) {
-        var suma = 0;
-        if(memory.indexOf("+", 1) != -1){
-          suma = suma + memory[j];
-          console.log(suma);
-        }
-
-    }
-      operator = memory.indexOf("+");
-      memory.splice(operator);
-      display.innerHTML = suma;
-    });
-
-//czyszczenie ekranu
+//clear display
     clear.addEventListener('click', function() {
-        display.innerHTML = "";
-        memory.length = 0;
+        memory ="";
+        document.querySelector('#displayForm').reset();
+    });
+//On - Of
+    ac.addEventListener('click', function() {
+        if(display.value!=""){
+          display.value="";
+        }
+        else{
+          display.value="0";
+        }
     });
 
 });

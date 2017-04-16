@@ -12,43 +12,39 @@
 <body>
     <div class="calculator">
         <div class="logo">CASIO</div>
-        <div  class="display" id="display"></div>
+        <form id="displayForm">
+            <input type="text" class="display" id="display" value="0" disabled>
+        </form>
         <div class="buttons">
-            <button class="button special_button" value="AC">AC</button>
+            <button class="button special_button" id="onOf">AC</button>
             <button class="button functional_button" id="clear" value="C">C</button>
-            <button class="button functional_button" value="√">√</button>
-            <button class="button functional_button" value="%">%</button>
+
         </div>
         <div class="buttons">
-            <button class="button numbers operator" value="7">7</button>
-            <button class="button numbers operator" value="8">8</button>
-            <button class="button numbers operator" value="9">9</button>
-            <button class="button numbers" value="/">/</button>
+            <button class="button operators" value="7">7</button>
+            <button class="button operators" value="8">8</button>
+            <button class="button operators" value="9">9</button>
+            <button class="button operators functional_button" value="/">÷</button>
         </div>
         <div class="buttons">
-            <button class="button numbers operator" value="4">4</button>
-            <button class="button numbers operator" value="5">5</button>
-            <button class="button numbers operator" value="6">6</button>
-            <button class="button functional_button" value="X">X</button>
+            <button class="button operators" value="4">4</button>
+            <button class="button operators" value="5">5</button>
+            <button class="button operators" value="6">6</button>
+            <button class="button operators functional_button" value="*">×</button>
         </div>
         <div class="buttons">
-            <button class="button numbers operator" value="1">1</button>
-            <button class="button numbers operator" value="2">2</button>
-            <button class="button numbers operator" value="3">3</button>
-            <button class="button functional_button" value="-">-</button>
+            <button class="button operators" value="1">1</button>
+            <button class="button operators" value="2">2</button>
+            <button class="button operators" value="3">3</button>
+            <button class="button operators functional_button" value="-">-</button>
         </div>
         <div class="buttons">
-            <button class="button numbers operator" value="0">0</button>
-            <button class="button functional_button" value=".">.</button>
+            <button class="button operators " value="0">0</button>
+            <button class="button operators functional_button" value=".">⋅</button>
             <button class="button functional_button" id="result" value="=">=</button>
-            <button class="button numbers" value="+">+</button>
+            <button class="button operators functional_button" value="+">+</button>
         </div>
-
-
-
     </div>
-
-
 </body>
 
 </html>
