@@ -1,4 +1,5 @@
-Calculator  http://htmlpreview.github.io/?https://github.com/petre11/Calculator/blob/master/index.html
+Calculator - JavaScript calculator  Used: JavaScript HTML5 CSS
 
-JavaScript calculator  Used: JavaScript HTML5 CSS
+https://petre11.github.io/Calculator/
+
 
