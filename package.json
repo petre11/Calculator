@@ -2,7 +2,7 @@
   "name": "calculator",
   "version": "2.0.0",
   "scripts": {
-    "prebuild": "pika-web --dest frontend/web_modules",
+    "prebuild": "pika-web --dest web_modules",
     "format": "prettier --print-width 120 --write *.js",
     "build": "parcel build index.html **/index.html",
     "test": "tape -r esm test/*Test.js | tap-spec",
