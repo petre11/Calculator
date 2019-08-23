@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let numberX;
   let numberY;
 
-  //Set numberX and numberY
   createArrayNumberTemp = (btn) => {
     fn = (element) => {
       element.addEventListener('click', function() {
@@ -29,7 +28,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     btn.forEach(fn);
   }
 
-  //Set operators value
   setOperator = (btn) => {
     fn = (element) => {
       element.addEventListener('click', function() {
@@ -46,7 +44,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     btn.forEach(fn);
   }
 
-  //Set mathematic operations
   setResult = () => {
     equal.addEventListener('click', function() {
       switch (operator) {
@@ -107,7 +104,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
       }
     });
   }
-  // OnOf simulation
   ac.addEventListener('click', function() {
     display.value = null;
     operator = 0;
@@ -118,33 +114,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
   setOperator(operators);
   setResult();
 
+  adding = (num1, num2) =>  num1 + num2;
 
-  //Mathematic operations
-  adding = (num1, num2) => {
-    result = num1 + num2;
-    return result;
-  }
+  subtraction = (num1, num2) => num1 - num2;
 
-  subtraction = (num1, num2) => {
-    result = num1 - num2;
-    return result;
-  }
+  multiply = (num1, num2) =>  num1 * num2;
 
-  multiply = (num1, num2) => {
-    result = num1 * num2;
-    return result;
-  }
+  divide = (num1, num2) => num1 / num2;
 
-  divide = (num1, num2) => {
-    result = num1 / num2;
-    return result;
-  }
-  sqrt = (num1) => {
-    result = Math.sqrt(num1);
-    return result;
-  }
-  percent = (num1, num2) => {
-    result = (num1 / 100) * num2;
-    return result;
-  }
+  sqrt = num1 => Math.sqrt(num1);
+
+  percent = (num1, num2) => (num1 / 100) * num2;
 });
