@@ -2,3 +2,4 @@ _config.yml
 node_modules
 package-lock.json
 web_modules
+.idea/misc.xml
